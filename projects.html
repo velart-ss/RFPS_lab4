@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Проєкти - InnovateTech</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        body {
+            padding-top: 100px;
+        }
+    </style>
+    <script src="js/projects.js" defer></script>
+</head>
+<body class="projects-page">
+    <header class="header-fixed">
+        <img src="logo.png" alt="Логотип InnovateTech" width="60" style="vertical-align: middle;">
+        <h1 style="display: inline-block; margin-left: 10px;">Наші Проєкти</h1>
+    </header>
+
+
+
+    <section id="projects-carousel" class="carousel" aria-roledescription="карусель" aria-label="Карусель проєктів" tabindex="0">
+        <noscript>Для перегляду каруселі увімкніть JavaScript.</noscript>
+    </section>
+
+    <main class="grid-container" style="grid-template-columns: 1fr 1fr;">
+        <div class="project-card">
+            <h3>Проєкт "SmartBiz Analytics"</h3>
+            <img src="project1.jpg" alt="SmartBiz Analytics">
+            <p><strong>Країна:</strong> Україна</p>
+            <ul>
+                <li>Використання алгоритмів машинного навчання.</li>
+                <li>Хмарна архітектура бази даних.</li>
+                <li>Інтуїтивно зрозумілий дашборд.</li>
+                <li>API для інтеграції.</li>
+                <li>Кібербезпека.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Проєкт "AutoSale Bot"</h3>
+            <img src="project2.jpg" alt="AutoSale Bot">
+            <p><strong>Країна:</strong> США</p>
+            <ul>
+                <li>Автоматизація обробки лідів.</li>
+                <li>Мультимовна підтримка (NLP).</li>
+                <li>Інтеграція з популярними CRM.</li>
+                <li>Гнучке налаштування.</li>
+                <li>Цілодобова доступність.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Проєкт "CloudGuard Security"</h3>
+            <img src="project3.svg" alt="CloudGuard Security">
+            <p><strong>Країна:</strong> Польща</p>
+            <ul>
+                <li>Моніторинг загроз у реальному часі.</li>
+                <li>Шифрування даних у хмарі.</li>
+                <li>Автоматичне резервне копіювання.</li>
+                <li>Аудит доступу користувачів.</li>
+                <li>Звіти для служби безпеки.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Проєкт "EduMind AI"</h3>
+            <img src="project4.svg" alt="EduMind AI">
+            <p><strong>Країна:</strong> Україна</p>
+            <ul>
+                <li>Персональні навчальні траєкторії.</li>
+                <li>Генерація тестів за допомогою ШІ.</li>
+                <li>Аналітика успішності.</li>
+                <li>Мобільний застосунок.</li>
+                <li>Інтеграція з Google Classroom.</li>
+            </ul>
+        </div>
+    </main>
+
+    <div style="text-align: center; margin: 30px;">
+        <a href="index.html" style="font-size: 18px; font-weight: bold;">Повернутися на Головну сторінку</a>
+    </div>
+</body>
+</html>

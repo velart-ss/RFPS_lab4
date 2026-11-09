@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#f4f6f9"/>
+  <rect x="0" y="0" width="640" height="18" fill="#18bc9c"/>
+  <g stroke="#bdc3c7" stroke-width="3">
+    <line x1="230" y1="150" x2="320" y2="100"/><line x1="320" y1="100" x2="410" y2="150"/>
+    <line x1="230" y1="150" x2="270" y2="230"/><line x1="410" y1="150" x2="370" y2="230"/>
+    <line x1="270" y1="230" x2="370" y2="230"/><line x1="320" y1="100" x2="320" y2="175"/>
+    <line x1="230" y1="150" x2="320" y2="175"/><line x1="410" y1="150" x2="320" y2="175"/>
+    <line x1="270" y1="230" x2="320" y2="175"/><line x1="370" y1="230" x2="320" y2="175"/>
+  </g>
+  <g fill="#34495e"><circle cx="230" cy="150" r="16"/><circle cx="410" cy="150" r="16"/><circle cx="270" cy="230" r="16"/><circle cx="370" cy="230" r="16"/></g>
+  <circle cx="320" cy="100" r="18" fill="#e67e22"/><circle cx="320" cy="175" r="22" fill="#18bc9c"/>
+  <path d="M470 105 L540 80 L610 105 L540 130 Z" fill="#2c3e50"/><path d="M500 116 L500 145 C520 160 560 160 580 145 L580 116 L540 130 Z" fill="#34495e"/>
+  <text x="320" y="315" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#2c3e50">EduMind AI</text>
+</svg>

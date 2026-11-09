@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Зворотній зв'язок</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/feedback.js" defer></script>
+</head>
+<body style="background: #f4f6f9; padding: 40px;">
+
+    <h1 style="text-align: center; color: #2c3e50;">Зворотній зв'язок</h1>
+
+    <form class="flex-form" action="#" method="post">
+
+        <div class="flex-item">
+            <fieldset style="border: 2px solid #34495e; padding: 15px;">
+                <legend style="background: #34495e; color: white; padding: 5px 10px;">Персональна інформація</legend>
+
+                <label>1. Прізвище та ім'я:</label>
+                <input type="text" required>
+
+                <label>2. E-mail:</label>
+                <input type="email" required>
+
+                <label>3. Вік:</label>
+                <input type="number" style="width:100%; padding: 10px; margin-top:5px; margin-bottom:15px;" required>
+            </fieldset>
+        </div>
+
+        <div class="flex-item">
+            <label>4. Освіта:</label>
+            <select>
+                <option>Вища повна</option>
+                <option>Вища неповна</option>
+                <option>Середня</option>
+            </select>
+
+            <label>5. Мета зворотнього зв'язку:</label>
+            <select>
+                <option>Співпраця</option>
+                <option>Скарга на порушення права власності</option>
+                <option>Пропозиція</option>
+                <option>Наявність помилки</option>
+            </select>
+        </div>
+
+        <div class="flex-item flex-item-full">
+            <label for="details">6. Детально:</label>
+
+
+            <div class="details-wrap">
+                <textarea id="details" rows="5" placeholder="Введіть текст..." aria-describedby="details-tooltip"></textarea>
+                <div id="details-tooltip" class="details-tooltip" role="tooltip">
+                    Вдячні за Ваш час! Конкретизуйте мету звернення, будь ласка
+                </div>
+            </div>
+
+            <label style="display: block; font-weight: bold; margin-bottom: 20px;">
+                <input type="checkbox" required style="width: auto;"> 7. Даю згоду на обробку інформації
+            </label>
+
+            <button type="submit">Відправити</button>
+            <a href="index.html" style="margin-left: 20px; text-decoration: none; color: #34495e; font-weight: bold;">На Головну</a>
+        </div>
+    </form>
+
+</body>
+</html>

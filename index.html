@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech Start-up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .header-absolute {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(26, 37, 47, 0.95);
+            color: #00ffcc;
+            text-align: center;
+            padding: 15px;
+            z-index: 1000;
+        }
+
+        body {
+            padding-top: 240px;
+            position: relative;
+        }
+
+        #about-us {
+            margin: 0;
+            padding: 40px 20px;
+            background: white;
+            border: 1px solid #ddd;
+        }
+
+            #about-us::after {
+                content: " 🤖 💻 🚀";
+                display: block;
+                font-size: 28px;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+        .founders-section {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            transition: transform 0.5s ease;
+            outline: none;
+        }
+
+            .founders-section:focus, .founders-section:focus-within {
+                transform: translateX(2%);
+                box-shadow: -5px 5px 15px rgba(0,0,0,0.1);
+            }
+
+        .scrollable-content {
+            max-height: 180px;
+            overflow-y: scroll;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-left: 3px solid #18bc9c;
+        }
+
+            .scrollable-content img {
+                float: left;
+                margin-right: 15px;
+                margin-bottom: 5px;
+                width: 80px;
+                border-radius: 50%;
+            }
+
+        footer address::selection, footer p::selection {
+            background-color: #18bc9c;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .fixed-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header-absolute">
+        <img src="logo.png" alt="Логотип InnovateTech" width="80" style="vertical-align: middle;">
+        <h1 id="site-title" class="site-title">Tech Start-up</h1>
+
+        <p class="motto-line">
+            <span id="motto" class="motto" data-text="Інновації сьогодні — успіх вашого бізнесу завтра!"></span><span class="motto-caret" aria-hidden="true">|</span>
+        </p>
+
+        <div style="margin-top: 10px;">
+            <button type="button">Особистий кабінет</button>
+            <button type="button">Реєстрація</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about-us">Про нас</a></li>
+            <li><a href="projects.html">Проєкти</a></li>
+            <li><a href="feedback.html">Зворотній зв'язок</a></li>
+        </ul>
+    </nav>
+
+    <div class="grid-container">
+        <main>
+            <article id="about-us">
+                <h2>Мета створення Tech start-up</h2>
+                <div class="scrollable-content">
+                    <img src="logo.png" alt="AI Core">
+                    <p>Наша мета — розробка передових технологічних рішень для оптимізації бізнес-процесів у малому та середньому бізнесі. Ми використовуємо новітні алгоритми штучного інтелекту для автоматизації рутини.</p>
+                    <p><strong>Завдання:</strong> 1) Дослідження потреб сучасного ринку IT-послуг. 2) Розробка прототипу програмного забезпечення. 3) Залучення інвестицій для масштабування продукту. 4) Вихід на міжнародні ринки. 5) Створення власної хмарної інфраструктури.</p>
+                </div>
+            </article>
+
+            <br>
+            <section class="founders-section" tabindex="0">
+                <h2>Засновники</h2>
+
+                <p class="founders-hint">Наведіть курсор на фото засновника — він загадає вам загадку.</p>
+                <div class="founders-gallery">
+                    <figure class="founder-card">
+                        <img class="founder-photo" src="founder1.png" alt="Фото: Коваленко О.І., CEO" data-founder="0" tabindex="0">
+                        <figcaption><strong>Коваленко О.І.</strong><br>CEO</figcaption>
+                    </figure>
+                    <figure class="founder-card">
+                        <img class="founder-photo" src="founder2.png" alt="Фото: Мельник І.В., CTO" data-founder="1" tabindex="0">
+                        <figcaption><strong>Мельник І.В.</strong><br>CTO</figcaption>
+                    </figure>
+                    <figure class="founder-card">
+                        <img class="founder-photo" src="founder3.png" alt="Фото: Шевченко А.П., CMO" data-founder="2" tabindex="0">
+                        <figcaption><strong>Шевченко А.П.</strong><br>CMO</figcaption>
+                    </figure>
+                </div>
+
+                <table>
+                    <caption>Команда засновників Tech start-up</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Прізвище та ініціали</th>
+                            <th rowspan="2">Посада</th>
+                            <th colspan="2">Досвід</th>
+                            <th rowspan="2">Освіта</th>
+                        </tr>
+                        <tr>
+                            <th>Роки</th>
+                            <th>Проєкти</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Коваленко О.І.</td>
+                            <td>CEO</td>
+                            <td>8</td>
+                            <td>12</td>
+                            <td>Вища технічна</td>
+                        </tr>
+                        <tr>
+                            <td>Мельник І.В.</td>
+                            <td>CTO</td>
+                            <td>10</td>
+                            <td>25</td>
+                            <td>Вища ІТ</td>
+                        </tr>
+                        <tr>
+                            <td>Шевченко А.П.</td>
+                            <td>CMO</td>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>Вища економічна</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="4">Загальна кількість засновників</th>
+                            <td>3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+
+        <aside style="background: white; padding: 20px; border-left: 4px solid #34495e;">
+            <h2>Відгуки</h2>
+            <p><i>"Чудова команда професіоналів, які знають свою справу!"</i> — Інвестор А.</p>
+            <p><i>"Швидко та якісно реалізували мою ідею"</i> — Клієнт Д.</p>
+            <p><i>"Рекомендую звертатися до цієї команди справжніх професіоналів"</i> — Клієнтка А.</p>
+        </aside>
+
+        <footer style="background: #2c3e50; color: white; padding: 20px; text-align: center;">
+            <h3>Контакти</h3>
+            <address>Адреса: вул. Петлюри, 1, м. Київ, Україна</address>
+            <p>Контактні телефони: +38 (099) 999-99-99, +38 (077) 777-77-77</p>
+        </footer>
+    </div>
+
+    <button class="fixed-btn" onclick="window.scrollTo(0,0)">Вгору</button>
+
+ 
+    <div id="riddle-modal" class="modal-overlay" hidden>
+        <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="riddle-title">
+            <button type="button" class="modal-close" aria-label="Закрити">×</button>
+            <img id="riddle-photo" class="modal-photo" src="founder1.png" alt="">
+            <h2 id="riddle-title">Загадка від засновника</h2>
+            <p id="riddle-author" class="riddle-author"></p>
+            <div id="riddle-body">
+                <p id="riddle-text" class="riddle-text"></p>
+                <form id="riddle-form" class="riddle-form" autocomplete="off">
+                    <input id="riddle-input" type="text" placeholder="Ваша відповідь…" aria-describedby="riddle-feedback">
+                    <button type="submit">Перевірити</button>
+                </form>
+                <p id="riddle-feedback" class="riddle-feedback" aria-live="polite"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
